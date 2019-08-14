@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+    <name>Lister_Greyferret</name>
+    <version>0.0.1</version>
+    <stability>stable</stability>
+    <license>General Public License (GPL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Greyferret is designed to offer e-tailers an edge by helping marketers achieve their critical marketing goals i.e Customer Retention, Acquisition &amp; Sales Uplift</summary>
+    <description> &#x2022; Segmentation Intelligence using Customer behavioural data&#xD;
+o Use Behavioral data from your Magento Store to understand your customers using real time data. Drive your marketing campaigns by understanding your customer based on how they have purchased and how they have engaged with you&#xD;
+&#x2022; Actionable insights using Customer Profiling, RFM Clustering &amp; Advanced Analytics&#xD;
+o Greyferret helps you profile your customers based key criteria such as gender, location, purchase history, frequency of purchases, SKUs purchased and engagement on email just to name a few.&#xD;
+o Based on this segmentation criteria, you can identify the right cohorts and apply the right marketing strategy that helps in retention programs, loyalty marketing and cross/upsell programs.&#xD;
+o As an example, imagine Cathy, who lives in Cleveland Ohio has been a regular customer and she has made several medium value purchases  regularly over the last 18 months. Using Greyferret helps you identify this behavior and reward her with free shipping options that will delight her and increase her loyalty towards your store. &#xD;
+&#x2022; Bi-directional integration with Marketing platforms&#xD;
+o Once you know your segment, you are just one step away from sending the right personalized campaign through the email service provider of your choice. Currently Greyferret integrates with MailChimp and integrations with other major email tools are coming soon</description>
+    <notes>Initial  Stable release</notes>
+    <authors><author><name>Lister Technologies (P) Ltd</name><user>Lister</user><email>info@listertechnologies.com</email></author></authors>
+    <date>2015-07-02</date>
+    <time>12:25:57</time>
+    <contents><target name="magecommunity"><dir name="Lister"><dir name="Greyferret"><dir name="Block"><dir name="Adminhtml"><dir name="System"><dir name="Config"><file name="Date.php" hash="9833c2f5876d82e424644605a817fde7"/></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="281a133d262533ecf4d5e01359fcf4fc"/></dir><dir name="Model"><dir name="Adminhtml"><dir name="System"><dir name="Config"><dir name="Category"><file name="List.php" hash="7004f22b892e2c30553d19abcf495639"/></dir><dir name="Cron"><file name="Schedule.php" hash="364bc51d39c4b8db3bb5fd8fa07b7a52"/></dir></dir></dir></dir><file name="Api.php" hash="34d96bafbe153725975cc05d22a6108f"/><file name="Observer.php" hash="575325822f389b779fe4235fd49b537f"/><dir name="Resource"><dir name="Api"><file name="Collection.php" hash="981e11f094a2c984b41a8af53c9f7f69"/></dir><file name="Api.php" hash="af980d553f39c98549224a3cb6a95e56"/></dir></dir><dir name="etc"><file name="config.xml" hash="870656cf0530ae55420a77ba1f51070d"/><file name="system.xml" hash="2fcaa06eaf617e67fde643fec4d818d1"/></dir><dir name="sql"><dir name="greyferret_setup"><file name="install-0.0.1.php" hash="92821c43bfe5e69846f661d8ad828d4c"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Lister_Greyferret.xml" hash="828e4ee56d06860ac2f415a9814b6ca9"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>5.6.9</max></php></required></dependencies>
+</package>

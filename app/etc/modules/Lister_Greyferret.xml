@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Lister_Greyferret>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Lister_Greyferret>
+    </modules>
+</config>
+

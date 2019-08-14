@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<tabs>
+		<greyferretconfig translate="label" module="greyferret">
+			<label>Lister API</label>
+            <sort_order>999999</sort_order>
+        </greyferretconfig>
+    </tabs>
+    <sections>
+        <greyferret_options translate="label" module="greyferret">
+            <label>Greyferret</label>
+            <tab>greyferretconfig</tab>
+			<frontend_type>text</frontend_type>	
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store> 
+            <groups>
+				<configurable_cron translate="label">
+					<label>Greyferret Cron Schedule</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<greyferret_api_url>
+                            <label>Api URL</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>required-entry validate-url </validate>                                                       						
+							<sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </greyferret_api_url>
+                        <greyferret_use_name>
+                            <label>User Name</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>required-entry</validate>                            						
+							<sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </greyferret_use_name>
+                        <greyferret_api_key>
+                            <label>Password</label>
+                            <frontend_type>password</frontend_type>
+                            <validate>required-entry</validate>
+                            <backend_model>adminhtml/system_config_backend_encrypted</backend_model>						
+							<sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </greyferret_api_key>
+                        <greyferret_timeout>
+                            <label>Timeout</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>required-entry validate-number</validate>						
+							<sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </greyferret_timeout> 
+						<greyferret_cron>
+                            <label>Cron</label>
+                            <frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>	
+							<sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </greyferret_cron>                         
+                        <greyferret_time>
+                            <label>Cron time</label>
+                            <frontend_type>time</frontend_type>							
+							<sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </greyferret_time>
+                        <greyferret_date>
+							<label>Cron Date</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>required-entry validate-date</validate>	                           
+                            <frontend_model>greyferret/adminhtml_system_config_date</frontend_model>	
+							<backend_model>greyferret/adminhtml_system_config_cron_schedule</backend_model>																														
+							<sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </greyferret_date>    
+                        <greyferret_list>
+                            <label>Category</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <validate>required-entry validate-select</validate>
+							<source_model>greyferret/adminhtml_system_config_category_list</source_model>
+							<comment><![CDATA[<script type="text/javascript">document.getElementById('greyferret_options_configurable_cron_greyferret_list').size =4;</script><script type="text/javascript">jQuery.noConflict();</script>]]></comment>	
+							<sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </greyferret_list>
+                        <greyferret_debug>
+                            <label>Debug Mode</label>
+                            <frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>	
+							<sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </greyferret_debug>
+						<greyferret_state>
+                            <label>Status</label>
+                            <frontend_type>label</frontend_type>                                                                           
+							<sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </greyferret_state>	              
+                    </fields>
+               </configurable_cron>
+            </groups>
+        </greyferret_options>
+    </sections>
+</config>

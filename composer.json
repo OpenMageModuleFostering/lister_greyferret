@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Lister_Greyferret",
+    "name": "OpenMageModuleFostering\/Lister_Greyferret",
     "type": "magento-module",
     "license": "General-Public-License-(GPL)",
     "homepage": "",
     "description": "Greyferret is designed to offer e-tailers an edge by helping marketers achieve their critical marketing goals i.e Customer Retention, Acquisition & Sales Uplift",
     "authors": [
-    {
-        "name": "Lister Technologies (P) Ltd",
-        "email": "info@listertechnologies.com"
-    }
-],
+        {
+            "name": "Lister Technologies (P) Ltd",
+            "email": "info@listertechnologies.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
